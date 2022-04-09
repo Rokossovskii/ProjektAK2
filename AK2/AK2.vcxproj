@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{670D8B56-6828-4492-9774-3A7385C2CAF9}</ProjectGuid>
+    <ProjectGuid>{A282C62C-6E00-4974-AC5E-C929EF972C0B}</ProjectGuid>
     <RootNamespace>AK2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -123,10 +123,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="arithmeticLibrary.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="arithmeticLibrary.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
