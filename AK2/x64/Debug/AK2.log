@@ -1,0 +1,5 @@
+﻿  arythmeticLiblary.cpp
+D:\Users\rokos\Documents\.Studia\Semestr 4\AK2\ProjektAK2\AK2\arythmeticLiblary.cpp(33,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+D:\Users\rokos\Documents\.Studia\Semestr 4\AK2\ProjektAK2\AK2\arythmeticLiblary.cpp(35,11): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+D:\Users\rokos\Documents\.Studia\Semestr 4\AK2\ProjektAK2\AK2\arythmeticLiblary.cpp(48,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  AK2.vcxproj -> D:\Users\rokos\Documents\.Studia\Semestr 4\AK2\ProjektAK2\AK2\x64\Debug\AK2.exe

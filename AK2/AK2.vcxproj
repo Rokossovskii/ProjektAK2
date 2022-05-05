@@ -123,6 +123,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="arythmeticLiblary.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="testFunctions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arythmeticLiblary.h" />
+    <ClInclude Include="testFunctions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

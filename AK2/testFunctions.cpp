@@ -5,26 +5,39 @@
 #include <math.h>
 
 void showNum(BigNum num) {
-	int number = 0;
+	double number = 0;
 	for (int i = num.numberSize; i > 0; i--) {
 		std::cout << std::bitset<8>(num.number[i-1]) << " ";
 		number = number + (int(num.number[i - 1])*pow(256,i-1));
 	}
-	std::cout << std::endl << number << std::endl << std::endl;
+	number = number / pow(2, num.numberPosition);
+	std::cout << num.numberPosition << std::endl << number << std::endl << std::endl;
 }
 
 void testNum() {
-	unsigned char numTab[2] = { 0x00,0x0 };
+	//std::cout << (3 - 13)%8<< std::endl;
+	unsigned char numTab[2] = { 0x4,0x0 };
 	BigNum num = createBN(numTab, 2, 0);
 	showNum(num);
+
 }
 
 void testAdd() {
-	unsigned char numTab1[2] = { 0xFE,0x0 };
-	unsigned char numTab2[2] = { 0x01,0x0 };
-	BigNum num1 = createBN(numTab1, 2, 0);
-	BigNum num2 = createBN(numTab2, 2, 0);
+	unsigned char numTab1[4] = { 0x00, 0x00,0x0,0x1 };
+	unsigned char numTab2[2] = { 0x2,0x1 };
+	BigNum num1 = createBN(numTab1, 4, 13);
+	BigNum num2 = createBN(numTab2, 2, 3);
+	showNum(num1);
+	showNum(num2);
 	showNum(add(num1,num2));
+
+	unsigned char numTab3[3] = { 0x00, 0x00, 0x0 };
+	unsigned char numTab4[2] = { 0x2, 0x1 };
+	num1 = createBN(numTab3, 3, 3);
+	num2 = createBN(numTab4, 2, 5);
+	showNum(num1);
+	showNum(num2);
+	showNum(add(num1, num2));
 }
 
 void testSub()

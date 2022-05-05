@@ -1,7 +1,7 @@
 #include "TestFunctions.h"
 
 int main(){
-	testNum();
+	//testNum();
 	testAdd();
-	testSub();
+	//testSub();
 }
