@@ -1,4 +1,6 @@
 #include "ArythmeticLiblary.h"
+#include <iostream>
+#include <bitset>
 
 BigNum createBN(unsigned char* num, int numSize, int numPos)
 {
@@ -21,10 +23,43 @@ BigNum add(BigNum num1, BigNum num2) {
 	unsigned int sum = 0;
 
 	if (slide < 0) {
-		//przesownie dodajnika
-
 		slide = slide * (-1);
+		int temp = num2.number[0 + slide / 8];
+		for (int i = 1; i < num2.numberSize; i++) {
+			if (i + slide / 8 < num2.numberSize) {
+				temp = temp + num2.number[i + slide / 8]*256;
+				/*
+				std::cout << temp << std::endl;
+				std::cout << std::bitset<16>(temp) << std::endl;
+				std::cout << std::bitset<8>(num2.number[i]) << " ";
+				std::cout << std::bitset<8>(num2.number[i -1]) << std::endl << std::endl;
+				*/
+				temp = temp >> (slide % 8);
+				num2.number[i - 1 + slide / 8] = temp;
+				num2.number[i] = temp/256;
+				/*
+				std::cout << temp << std::endl;
+				std::cout << std::bitset<16>(temp) << std::endl;
+				std::cout << std::bitset<8>(num2.number[i]) << " ";
+				std::cout << std::bitset<8>(num2.number[i - 1]) << std::endl << std::endl;
+			*/
+			}
+			else {
+				num2.number[i] = 0;
+			}
+		}
+		num2.numberPosition = num1.numberPosition;
 	}
+
+
+	double number = 0;
+	for (int i = num2.numberSize; i > 0; i--) {
+		std::cout << std::bitset<8>(num2.number[i - 1]) << " ";
+		number = number + (int(num2.number[i - 1]) * pow(256, i - 1));
+	}
+	number = number / pow(2, num2.numberPosition);
+	std::cout << num2.numberPosition << std::endl << number << std::endl << std::endl;
+
 
 	if (num2.numberSize * 8 + num1.numberPosition > num1.numberSize * 8) {
 
