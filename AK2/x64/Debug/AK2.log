@@ -1,7 +1,2 @@
-﻿  arythmeticLiblary.cpp
-D:\Users\rokos\Documents\.Studia\Semestr 4\AK2\ProjektAK2\AK2\arythmeticLiblary.cpp(45,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-D:\Users\rokos\Documents\.Studia\Semestr 4\AK2\ProjektAK2\AK2\arythmeticLiblary.cpp(46,22): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-D:\Users\rokos\Documents\.Studia\Semestr 4\AK2\ProjektAK2\AK2\arythmeticLiblary.cpp(80,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-D:\Users\rokos\Documents\.Studia\Semestr 4\AK2\ProjektAK2\AK2\arythmeticLiblary.cpp(82,10): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-D:\Users\rokos\Documents\.Studia\Semestr 4\AK2\ProjektAK2\AK2\arythmeticLiblary.cpp(95,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+﻿  testFunctions.cpp
   AK2.vcxproj -> D:\Users\rokos\Documents\.Studia\Semestr 4\AK2\ProjektAK2\AK2\x64\Debug\AK2.exe

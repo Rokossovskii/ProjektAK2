@@ -2,6 +2,6 @@
 
 int main(){
 	//testNum();
-	testAdd();
-	//testSub();
+	//testAdd();
+	testSub();
 }

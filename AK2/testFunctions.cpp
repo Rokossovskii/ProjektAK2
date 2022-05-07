@@ -42,10 +42,12 @@ void testAdd() {
 
 void testSub()
 {
-	unsigned char numTab1[2] = { 0x03,0x0 };
-	unsigned char numTab2[2] = { 0x01,0x0 };
-	BigNum num1 = createBN(numTab1, 2, 0);
+	unsigned char numTab1[1] = { 0x00 };
+	unsigned char numTab2[2] = { 0x04,0x0 };
+	BigNum num1 = createBN(numTab1, 1, 0);
 	BigNum num2 = createBN(numTab2, 2, 0);
+	showNum(num1);
+	showNum(num2);
 	showNum(sub(num1, num2));
 }
 
