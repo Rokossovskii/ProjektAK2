@@ -1,3 +1,6 @@
+//to domyslne do wywalenia
+#include <iostream>
+#include <bitset>
 #pragma once
 
 struct BigNum {
@@ -8,10 +11,10 @@ struct BigNum {
 
 BigNum createBN(unsigned char*, int, int);
 
-BigNum add(BigNum, BigNum);
+BigNum add(BigNum num1, BigNum num2);
 
 BigNum sub(BigNum, BigNum);
 
-BigNum mul(BigNum, BigNum);
+BigNum mul(BigNum num1, BigNum num2);
 
 BigNum div(BigNum, BigNum);

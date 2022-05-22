@@ -124,12 +124,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="arythmeticLiblary.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="testFunctions.cpp" />
+    <ClCompile Include="calculatingNumber.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arythmeticLiblary.h" />
-    <ClInclude Include="testFunctions.h" />
+    <ClInclude Include="catch.hpp" />
+    <ClInclude Include="calculatingNumber.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
